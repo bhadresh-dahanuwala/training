@@ -1,0 +1,27 @@
+{
+    "subjects": {
+        "math": {
+            "payment-rate": 0.25,
+            "items-completed": 5
+        },
+        "language-arts": {
+            "payment-rate": 1.00,
+            "items-completed": 4
+        },
+        "science": {
+            "payment-rate": 0.35,
+            "items-completed": 7
+        },
+        "social-studies": {
+            "payment-rate": 0.75,
+            "items-completed": 4
+        },
+        "spanish": {
+            "payment-rate": 0.50,
+            "items-completed": 6
+        }
+    },
+    "payments": {
+        "2023-06-22": 10.00
+    }
+}
