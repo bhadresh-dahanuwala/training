@@ -15,14 +15,20 @@ ixl_file.close()
 # Total amount earned by completing the topics in all subjects
 amount_earned = 0
 
+potential_earning = 0
+
 # Get the amount earned for each subject and add it to the total amount earned
 for subject in ixl["subjects"]:
-    amount = (
-        ixl["subjects"][subject]["payment-rate"]
-        * ixl["subjects"][subject]["items-completed"]
-    )
-    amount_earned += amount
+    payment_rate = ixl["subjects"][subject]["payment-rate"]
+    total_skills = ixl["subjects"][subject]["total-skills"]
+    skills_completed = ixl["subjects"][subject]["skills-completed"]
+    amount_earned += payment_rate * skills_completed
+    potential_earning += payment_rate + total_skills
+
+
+print("potential-earnings", potential_earning)
 print("amount-earned", amount_earned)
+print("percentage-earned", round((amount_earned / potential_earning) * 100, 2))
 
 # The total amount received
 amount_received = 0
