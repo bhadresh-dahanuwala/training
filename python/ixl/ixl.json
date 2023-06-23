@@ -2,23 +2,28 @@
     "subjects": {
         "math": {
             "payment-rate": 0.25,
-            "items-completed": 5
+            "items-completed": 5,
+            "total-skills": 418
         },
         "language-arts": {
             "payment-rate": 1.00,
-            "items-completed": 4
+            "items-completed": 4,
+            "total-skills": 172
         },
         "science": {
             "payment-rate": 0.35,
-            "items-completed": 7
+            "items-completed": 7,
+            "total-skills": 128
         },
         "social-studies": {
             "payment-rate": 0.75,
-            "items-completed": 4
+            "items-completed": 4,
+            "total-skills": 150
         },
         "spanish": {
             "payment-rate": 0.50,
-            "items-completed": 6
+            "items-completed": 6,
+            "total-skills": 140
         }
     },
     "payments": {}
