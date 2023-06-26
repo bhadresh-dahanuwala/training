@@ -7,24 +7,26 @@
         },
         "language-arts": {
             "payment-rate": 1.00,
-            "skills-completed": 4,
+            "skills-completed": 6,
             "total-skills": 172
         },
         "science": {
             "payment-rate": 0.35,
-            "skills-completed": 7,
+            "skills-completed": 8,
             "total-skills": 128
         },
         "social-studies": {
             "payment-rate": 0.75,
-            "skills-completed": 4,
+            "skills-completed": 7,
             "total-skills": 150
         },
         "spanish": {
             "payment-rate": 0.50,
-            "skills-completed": 6,
+            "skills-completed": 10,
             "total-skills": 140
         }
     },
-    "payments": {}
+    "payments": {
+        "2023-06-24": 20
+    }
 }

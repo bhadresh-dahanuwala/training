@@ -1,19 +1,16 @@
 import json
 
-person = {
-    "first_name": "Aarush",
-    "last_name": "Dahanuwala",
-    "dob": "2010-08-30",
-    "weight_lbs": {
-        "2023-06-15": 95,
-        "2023-06-16": 95.2,
-        "2023-06-17": 95.3,
-        "2023-06-18": 95.4,
-    },
-    "height_inches": 59,
-    "friends": ["Shrirang", "Sid"],
-}
+person_file_path = "/Users/aarush/Documents/git/training/python/person.json"
 
+person_file = open(person_file_path, "r")
+
+person = json.load(person_file)
+
+person_file.close()
+
+print("printing all the root keys in the dictionary")
+for info in person:
+    print(info)
 """
 print(person["first_name"])
 
@@ -41,6 +38,10 @@ print(len(person.keys()))
 # Print the whole dictionary
 print(person)
 
+#person["friends"].append("Dhruv")
+person["hobbies"].append("cricket")
+
 # Save dictionary in a json file
 file_path = "person.json"
 json.dump(person, open(file_path, "w"), indent=4)
+
