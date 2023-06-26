@@ -23,7 +23,7 @@ potential_earning = 0
 for subject in ixl["subjects"]:
     payment_rate = ixl["subjects"][subject]["payment-rate"]
     total_skills = ixl["subjects"][subject]["total-skills"]
-    skills_completed = ixl["subjects"][subject]["skills-completed"]
+    skills_completed = len(ixl["subjects"][subject]["skills-completed"])
     pct_completed = round((skills_completed * 100) / total_skills, 2)
     print(f"[{subject}] completed {pct_completed}%")
     amount_earned += payment_rate * skills_completed
